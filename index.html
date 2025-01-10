@@ -7,21 +7,41 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
-        <h1>Harmonify</h1>
-        <button id="loginButton">Log in with Spotify</button>
-        
-        <div id="playlists" class="playlists">
-            <!-- Playlists will be displayed here -->
+    <header>
+        <div class="container">
+            <h1>Harmonify</h1>
+            <p>Connect your Spotify account and start exploring your playlists and tracks.</p>
         </div>
+    </header>
 
-        <div id="currentTrack" class="current-track">
+    <main class="container">
+        <section id="loginSection">
+            <button id="loginButton" class="btn-primary">Log in with Spotify</button>
+        </section>
+
+        <section id="playlistsSection" class="playlists">
+            <h2>Your Playlists</h2>
+            <div id="playlists" class="playlist-list">
+                <!-- Playlists will be dynamically populated here -->
+            </div>
+            <div id="loadingIndicator" class="loading-spinner" style="display: none;">
+                <p>Loading...</p>
+            </div>
+        </section>
+
+        <section id="currentTrackSection" class="current-track">
             <h2>Currently Playing</h2>
             <p id="songName">Song name</p>
             <p id="songArtist">Artist name</p>
-            <button id="skipTrackButton">Skip Song</button>
+            <button id="skipTrackButton" class="btn-secondary">Skip Song</button>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Harmonify. All rights reserved.</p>
         </div>
-    </div>
+    </footer>
 
     <script src="script.js"></script>
 </body>
