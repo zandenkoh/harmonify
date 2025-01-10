@@ -1,0 +1,59 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1db954;
+    color: white;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #121212;
+    border-radius: 10px;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+button {
+    background-color: #1db954;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #1ed760;
+}
+
+.playlists {
+    margin-top: 20px;
+}
+
+.playlistItem {
+    background-color: #282828;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.current-track {
+    margin-top: 30px;
+}
+
+.current-track p {
+    font-size: 1.2rem;
+}
+
+#skipTrackButton {
+    margin-top: 15px;
+}
